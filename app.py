@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS to allow frontend requests
 
 # Load the summarization model
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 @app.route('/summarize', methods=['POST'])
 def summarize():
