@@ -5,11 +5,11 @@ import json
 app = Flask(__name__)
 
 # Hugging Face API key
-HUGGINGFACE_API_KEY = "your_huggingface_api_key"
+HUGGINGFACE_API_KEY = "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"
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
 
 headers = {
-    "Authorization": f"Bearer {HUGGINGFACE_API_KEY}"
+    "Authorization": f"Bearer {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}"
 }
 
 @app.route('/summarize', methods=['POST'])
