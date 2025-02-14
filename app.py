@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import requests
 import json
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 # Fetch API Key from environment variables
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
